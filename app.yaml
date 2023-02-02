@@ -1,0 +1,11 @@
+# The app.yaml file specifies the bootstrap directory as the location for static files
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /.*
+  script: guestbook.app
